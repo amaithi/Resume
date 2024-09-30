@@ -1,0 +1,69 @@
+.resume-container{
+    padding:20px 20px;
+    color: black;
+    div{
+        text-align: justify;
+    }
+    .left-container,.right-container{
+        padding: 20px;
+    }
+    .profile-pic-container{
+        display: flex;
+        justify-content: center;
+    }
+    .education{
+        margin-top: 50px;
+    }
+    .skill{
+        margin-top: 50px;
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        border-radius: 5%;
+    }
+    .left-container{
+        background: beige;
+    }
+    .right-container{
+        border-right: 1px solid beige;
+        border-top: 1px solid beige;
+        border-bottom: 1px solid beige;
+    }
+    .resume-header{
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .resume-list-header{
+        font-size: 20px;
+        padding-top: 10px;
+        letter-spacing: 2px;
+    }
+    .duration{
+        text-align: right;
+    }
+    .resume-list-content{
+        font-size: 16px;
+        line-height: 30px;
+        padding-bottom: 20px;    
+        font-weight: 300;
+    }
+    .office-header{
+        font-weight: 600;
+        padding-bottom: 10px;
+        /* letter-spacing: 1px; */
+    }
+    .office-role{
+        /* margin-left: 20px; */
+        font-weight: 600;        
+    }
+    .details-label{
+        font-weight: 800;
+    }
+    .office-role-ul{
+        li{
+            margin-left: 50px;
+            padding-top: 15px;
+        }
+    }
+}
