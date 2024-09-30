@@ -1,0 +1,114 @@
+<div class="resume-container">
+  <div class="row">
+      <!-- Left Container start -->
+      <div class="col-3 left-container">
+          <div>
+              <div class="row">
+                  <div class="col-12 profile-pic-container">
+                      <img class="profile-pic" src="assets/img/photo.jpeg" />
+                  </div>
+              </div>
+              
+              <div class="resume-list-header pt-4">Contact</div>
+              <hr>
+              <div class=""><i><b>Immediate Joiner</b></i></div>
+              @for(listData of constactDetails;track listData){
+              <div >
+                  <span class="office-role">{{listData.label}} </span>
+                  <span class="resume-list-content"> {{listData.name}}</span>
+              </div>
+              }
+              <br>
+              <div class="resume-list-header skill pt-0">Skill</div>
+              <hr>
+              @for(listData of skillDetails;track listData){
+              <div>
+                  <span class="office-role">{{listData.label}} </span>
+                  <span class="resume-list-content"> {{listData.name}}</span>
+              </div>
+              }
+              <br>
+              <div class="resume-list-header">Awards</div>
+              <hr>
+              @for(listData of awardList;track listData){
+              <div class="office-role">{{listData.label1}}</div>
+              <div class="office-header pb-0">{{listData.label2}}</div>
+              <div>{{listData.label3}}</div>
+              <br>
+              }
+              <br>
+              <div class="resume-list-header education">Education</div>
+              <hr>
+              @for(listData of educationList;track listData){
+              <div class="office-role mb-2">{{listData.course}}</div>
+              <div class="office-header mb-2 pb-0">{{listData.name}}</div>
+              <div class="row">
+                  <div class="col-8">
+                      {{listData.year}}
+                  </div>
+                  <div class="col-4 duration">
+                      {{listData.percentage}}
+                  </div>
+              </div>
+              <br>
+              }
+          </div>
+      </div>
+      <!-- Left Container End -->
+      <!-- Right Container start -->
+      <div class="col-9 right-container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="resume-header">Amaithi Singam J</div>
+                  <div>
+                      <div class="resume-list-header">Senior Software Engineer | Exp:6.5 Years</div>
+                      <hr>
+                      <div class="resume-list-content">Web Developer specializing in front end development, Full stack
+                          development (MEAN, MERN stack) Experienced with all stages of the development cycle for
+                          dynamic web projects. Well- versed in numerous programming languages including Angular 15, Angular 10,
+                          Kendo Framework, node JS, express, Mongo DB, React JS, AngularJS, JavaScript, jQuery,
+                          Salesforce Lightning, ADA, HTML5, JavaScript, CSS3, Bootstrap. Strong background in project
+                          management and customer relations.</div>
+                  </div>
+                  <div>
+                      <div class="resume-list-header">Work Experience</div>
+                      <hr>@for(list of dataList;track list.officeName){
+                      <div class="row">
+                          <div class="col-7 office-header">
+                              {{list.roleName}}
+                          </div>
+                          <div class="col-5 office-header duration">
+                              {{list.duration}}
+                          </div>
+                          <div class="office-header">{{list.officeName}}</div>
+                          <div class="office-header">
+                              {{list.projectName}}
+                          </div>
+                          <div class="resume-list-content">
+                              {{list.projectDetails}}
+                          </div>
+                          <div class="office-role">Roles</div>
+                          <ul class="office-role-ul">
+                              @for(roleList of list.roles | keyvalue; track roleList.key){
+                              <li>
+                                  {{roleList.value}}
+                              </li>
+                              }
+
+                          </ul>
+                          <div>
+                              <span class="office-role">Technology Used: </span>
+                              <span class=""> {{list.technologyUsed}}</span>
+                          </div>
+
+                      </div>
+                      <hr>
+                      }
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Right Container end -->
+  </div>
+</div>
