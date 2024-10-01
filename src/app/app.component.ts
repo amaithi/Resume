@@ -47,7 +47,8 @@ export class AppComponent {
   //   label: "LinedIn: ",
   //   name: " https://www.linkedin.com/in/amaithi-singam-j-83a94815a/"
   // }
-  , {
+  // , 
+  {
     label: "Address: ",
     name: " Madurai, Tamilnadu, India"
   }]
