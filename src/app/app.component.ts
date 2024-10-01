@@ -42,10 +42,12 @@ export class AppComponent {
   }, {
     label: "Email: ",
     name: " amaithisingam@gmail.com"
-  }, {
-    label: "LinedIn: ",
-    name: " https://www.linkedin.com/in/amaithi-singam-j-83a94815a/"
-  }, {
+  },
+  //  {
+  //   label: "LinedIn: ",
+  //   name: " https://www.linkedin.com/in/amaithi-singam-j-83a94815a/"
+  // }
+  , {
     label: "Address: ",
     name: " Madurai, Tamilnadu, India"
   }]
